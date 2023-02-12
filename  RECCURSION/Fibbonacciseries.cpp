@@ -13,12 +13,13 @@ int fib(int n){
 }
 //recursive function
 int fibr(int n){
-    if(n<=1)
+    if(n<=1)//base condition
         return n;
-    return fibr(n-2)+fibr(n-1);
+    return fibr(n-2)+fibr(n-1);//RR
 }
 int main(){
     int r;
-    r= fibr(10);
-    cout<<r<<endl;
+    cin>>r;
+    int ans= fibr(r);
+    cout<<ans<<endl;
 }
